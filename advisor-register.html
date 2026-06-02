@@ -7,78 +7,77 @@
 <title>ICEC Advisor Registration</title>
 
 <style>
+
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f6f9;
-    margin:0;
-    padding:20px;
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:20px;
+color:#333;
 }
 
 .container{
-    max-width:800px;
-    margin:auto;
-    background:#fff;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+max-width:1000px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 h1{
-    text-align:center;
-    color:#003366;
+text-align:center;
+color:#003366;
+margin-bottom:10px;
 }
 
-p{
-    text-align:center;
+h2{
+color:#003366;
+margin-top:25px;
 }
 
-.form-group{
-    margin-bottom:15px;
+.notice{
+background:#fff8db;
+padding:20px;
+border-radius:8px;
+margin-bottom:20px;
+border-left:5px solid #ffcc00;
 }
 
-label{
-    display:block;
-    margin-bottom:5px;
-    font-weight:bold;
+.highlight{
+background:#eef6ff;
+padding:20px;
+border-radius:8px;
+margin-top:20px;
 }
 
-input, select{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:5px;
-    box-sizing:border-box;
+.btn{
+display:block;
+background:#003366;
+color:white;
+text-align:center;
+padding:18px;
+border-radius:8px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+margin-top:30px;
 }
 
-.checkbox{
-    margin-top:15px;
+.btn:hover{
+background:#0055aa;
 }
 
-button{
-    width:100%;
-    background:#003366;
-    color:white;
-    border:none;
-    padding:15px;
-    border-radius:5px;
-    font-size:16px;
-    cursor:pointer;
-    margin-top:15px;
+ul{
+line-height:1.8;
 }
 
-button:hover{
-    background:#0055aa;
+.footer{
+text-align:center;
+margin-top:30px;
+color:#666;
 }
 
-.success{
-    display:none;
-    background:#dff0d8;
-    color:#3c763d;
-    padding:15px;
-    border-radius:5px;
-    margin-top:20px;
-    text-align:center;
-}
 </style>
 
 </head>
@@ -89,90 +88,113 @@ button:hover{
 
 <h1>ICEC Career Abroad Pathway Advisor Registration</h1>
 
-<p>
-Register to attend the mandatory orientation webinar and become an ICEC Advisor.
+<p style="text-align:center;">
+Join ICEC and help students discover overseas education and international career opportunities while earning attractive incentives.
 </p>
 
-<form id="advisorForm">
+<div class="notice">
 
-<div class="form-group">
-<label>Full Name *</label>
-<input type="text" required>
-</div>
+<h2>Mandatory Orientation Webinar</h2>
 
-<div class="form-group">
-<label>Mobile Number *</label>
-<input type="tel" required>
-</div>
+<p>
+All applicants must attend the ICEC Orientation Webinar before activation of their Advisor ID.
+</p>
 
-<div class="form-group">
-<label>WhatsApp Number *</label>
-<input type="tel" required>
-</div>
+<p>
+The webinar covers:
+</p>
 
-<div class="form-group">
-<label>Email Address *</label>
-<input type="email" required>
-</div>
-
-<div class="form-group">
-<label>City *</label>
-<input type="text" required>
-</div>
-
-<div class="form-group">
-<label>Occupation *</label>
-<select required>
-<option value="">Select</option>
-<option>Student</option>
-<option>Teacher</option>
-<option>Professor</option>
-<option>Career Counsellor</option>
-<option>HR Professional</option>
-<option>Retired Professional</option>
-<option>Business Owner</option>
-<option>Other</option>
-</select>
-</div>
-
-<div class="form-group">
-<label>Referral Advisor Code (Optional)</label>
-<input type="text">
-</div>
-
-<div class="checkbox">
-<input type="checkbox" required>
-I agree to attend the mandatory orientation webinar.
-</div>
-
-<div class="checkbox">
-<input type="checkbox" required>
-I accept ICEC Advisor Terms & Conditions.
-</div>
-
-<button type="submit">
-REGISTER FOR WEBINAR
-</button>
-
-</form>
-
-<div class="success" id="successMessage">
-Thank you for registering.<br><br>
-Your application has been received successfully.<br>
-Webinar details will be sent to your Email and WhatsApp.
-</div>
+<ul>
+<li>Study Abroad Opportunities</li>
+<li>Australian Skill Shortage Career Pathways</li>
+<li>Advisor Incentive Structure</li>
+<li>Student Recruitment Process</li>
+<li>Candidate Registration Procedures</li>
+<li>Sub-Advisor Programme</li>
+<li>ICEC Portal Training</li>
+</ul>
 
 </div>
 
-<script>
-document.getElementById("advisorForm").addEventListener("submit", function(e){
-e.preventDefault();
-document.getElementById("successMessage").style.display="block";
-this.style.display="none";
-});
-</script>
+<h2>Who Can Become an Advisor?</h2>
+
+<ul>
+<li>Students</li>
+<li>Teachers & Professors</li>
+<li>Career Counsellors</li>
+<li>HR Professionals</li>
+<li>Retired Professionals</li>
+<li>Business Owners</li>
+<li>Community Leaders</li>
+<li>Social Influencers</li>
+</ul>
+
+<h2>Advisor Earnings</h2>
+
+<ul>
+<li><strong>₹500</strong> for every candidate who completes counselling and submits documents for a detailed Study Abroad & Career Pathway Assessment.</li>
+
+<li><strong>₹10,000 – ₹20,000</strong> per successful admission after fee payment and expiry of the applicable fee refund period.</li>
+
+<li>Additional incentives on accommodation, education loans, travel services and other support services arranged through ICEC and its partners.</li>
+</ul>
+
+<h2>Principal Advisor & Sub-Advisor Programme</h2>
+
+<ul>
+<li>Recruit and mentor other advisors.</li>
+
+<li><strong>₹250</strong> for every eligible counselling case generated by your Sub-Advisor.</li>
+
+<li><strong>₹3,000</strong> for every successful admission generated by your Sub-Advisor.</li>
+
+<li>Build your own advisor network and earn recurring incentives.</li>
+</ul>
+
+<div class="highlight">
+
+<h2>Candidate Registration Rules</h2>
+
+<ul>
+<li>All candidates must be registered through the ICEC system.</li>
+
+<li>Candidate ownership is established after ICEC verification.</li>
+
+<li>Only verified and genuine candidates qualify for incentives.</li>
+
+<li>Repeated submission of non-genuine or unverifiable candidates may result in suspension or termination of advisor privileges.</li>
+
+</ul>
+
+</div>
+
+<a href="https://forms.gle/HtWgNRsPy4oy8dSJ8"
+target="_blank"
+class="btn">
+
+REGISTER FOR WEBINAR & ADVISOR REGISTRATION
+
+</a>
+
+<div class="footer">
+
+<p>
+Already Registered?
+</p>
+
+<p>
+<a href="advisor-login.html">
+Advisor Login
+</a>
+</p>
+
+<p>
+© ICEC – International Career & Educational Consultants
+</p>
+
+</div>
+
+</div>
 
 </body>
 </html>
-```
-
