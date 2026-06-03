@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ICEC Advisor Dashboard</title>
 
 <style>
@@ -12,64 +12,56 @@ body{
 font-family:Arial,sans-serif;
 background:#f4f6f9;
 margin:0;
+padding:0;
 }
 
 .header{
 background:#003366;
 color:white;
-padding:20px;
+padding:25px;
 text-align:center;
 }
 
 .container{
-max-width:1200px;
+max-width:1000px;
 margin:auto;
-padding:20px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+padding:30px;
 }
 
 .card{
 background:white;
 padding:20px;
+margin-bottom:20px;
 border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
-text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
-.card h2{
-margin:0;
-color:#003366;
-}
-
-.card p{
-font-size:28px;
-font-weight:bold;
-}
-
-.menu{
-margin-top:30px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.menu a{
+.btn{
+display:block;
 background:#003366;
 color:white;
+padding:15px;
 text-decoration:none;
-padding:20px;
+border-radius:5px;
+margin-top:10px;
 text-align:center;
-border-radius:10px;
 font-weight:bold;
 }
 
-.menu a:hover{
+.btn:hover{
 background:#0055aa;
+}
+
+.logout{
+background:#cc0000;
+}
+
+.logout:hover{
+background:#990000;
+}
+
+ul{
+line-height:1.8;
 }
 
 </style>
@@ -79,66 +71,100 @@ background:#0055aa;
 <body>
 
 <div class="header">
+
 <h1>ICEC Advisor Dashboard</h1>
-<p>Welcome Advisor</p>
+
+<p>
+Welcome to the ICEC Career Abroad Pathway Advisor Network
+</p>
+
 </div>
 
 <div class="container">
 
-<div class="cards">
+<div class="card">
+
+<h2>Register New Candidate</h2>
+
+<p>
+Register prospective students and candidates for counselling.
+</p>
+
+<a class="btn"
+href="https://forms.gle/BNAfdd4c7L1aczda6"
+target="_blank">
+
+REGISTER CANDIDATE
+
+</a>
+
+</div>
 
 <div class="card">
-<h2>Total Leads</h2>
-<p>0</p>
+
+<h2>Advisor Earnings</h2>
+
+<ul>
+
+<li>₹500 for every eligible counselling case resulting in document submission.</li>
+
+<li>₹10,000–₹20,000 for successful admissions.</li>
+
+<li>Additional incentives on accommodation, travel and support services.</li>
+
+<li>₹250 counselling incentive from Sub-Advisor cases.</li>
+
+<li>₹3,000 admission incentive from Sub-Advisor cases.</li>
+
+</ul>
+
 </div>
 
 <div class="card">
-<h2>Verified Leads</h2>
-<p>0</p>
+
+<h2>Advisor Rules</h2>
+
+<ul>
+
+<li>All candidates must be registered through ICEC systems.</li>
+
+<li>Only genuine candidates qualify for incentives.</li>
+
+<li>Candidate ownership is subject to ICEC verification.</li>
+
+<li>ICEC reserves the right to verify candidate details.</li>
+
+<li>Repeated non-genuine registrations may lead to suspension.</li>
+
+</ul>
+
 </div>
 
 <div class="card">
-<h2>Admissions</h2>
-<p>0</p>
-</div>
 
-<div class="card">
-<h2>Commission Earned</h2>
-<p>₹0</p>
-</div>
+<h2>Contact ICEC</h2>
 
-</div>
+<p>
 
-<div class="menu">
+Email:<br>
+[pkc.consultancy@gmail.com](mailto:pkc.consultancy@gmail.com)
 
-<a href="candidate-register.html">
-Register Candidate
-</a>
+<br><br>
 
-<a href="#">
-Program Search
-</a>
+For counselling support and admissions assistance contact ICEC directly.
 
-<a href="#">
-My Candidates
-</a>
-
-<a href="#">
-Commission Tracker
-</a>
-
-<a href="#">
-Sub Advisors
-</a>
-
-<a href="index.html">
-Home
-</a>
+</p>
 
 </div>
+
+<a class="btn logout"
+href="advisor-login.html">
+
+LOGOUT
+
+</a>
 
 </div>
 
 </body>
 </html>
-
